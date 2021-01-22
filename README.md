@@ -1,2 +1,2 @@
 # Aloe-Vera
-mini project
+mini project, HTML only
