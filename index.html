@@ -1,215 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=7">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>My Aloe Vera world</title>
     <style>
-        body {
-            background-color: #a6f5f4;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-        }
-        .container {
-            max-width: 700px;
-            margin: 0 auto;
-            padding: 40px 50px 70px 50px;
-        }
+      body {
+        background-color: #a6f5f4;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 40px 50px 70px 50px;
+      }
 
-       h1 {
-           font-size: 46px;
-           font-family:fantasy;
-           text-align: center;  
-       }
+      h1 {
+        font-size: 46px;
+        font-family: "Caveat", cursive;
+        text-align: center;
+      }
 
-       h2 {
-           background: linear-gradient(#e5f0e6, #8ddfbc);
-           border: 1px solid #137442;
-           border-radius: 0 40px;
-           box-shadow: 2px 2px 10px #126f50;
-           font-size: 24px;
-           font-family:fantasy;
-           text-align: center;
-           padding: 20px;
-           margin: 0 0 50px 0;
-       }
+      h2 {
+        background: linear-gradient(#e5f0e6, #8ddfbc);
+        border: 1px solid #137442;
+        border-radius: 0 40px;
+        box-shadow: 2px 2px 10px #126f50;
+        font-size: 24px;
+        font-family: fantasy;
+        text-align: center;
+        padding: 20px;
+        margin: 0 0 50px 0;
+      }
 
-       p {
-           font-size: 14px;
-           line-height: 1.5;
-           text-align: justify;
-       }
+      p {
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: justify;
+      }
 
-       .pictures {
-           display: block;
-           margin: 40px auto;
-           max-width: 80%;
-           border: 1px solid #17744c;
-           border-radius: 10px;
-           box-shadow: 2px 2px 20px #126f50;
-       }
+      .pictures {
+        display: block;
+        margin: 40px auto;
+        max-width: 80%;
+        border: 1px solid #17744c;
+        border-radius: 10px;
+        box-shadow: 2px 2px 20px #126f50;
+      }
 
-       span {
-           text-transform: uppercase;
-           text-decoration: underline;
-           text-shadow:0 2px #142110;    
-       }
+      span {
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-shadow: 0 2px #142110;
+      }
 
-       span:hover {
-           color: #30b179;
-       }
+      span:hover {
+        color: #30b179;
+      }
 
-       strong {
-           color: #17744c;
-           font-size: 14px;
-       }
+      strong {
+        color: #17744c;
+        font-size: 14px;
+      }
 
-       ol {
-           font-family:Verdana, Geneva, Tahoma, sans-serif;
-           font-size: 14px;
-           line-height: 2;
-           color: #062417;
-       }
+      ol {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        line-height: 2;
+        color: #062417;
+      }
 
-       .more_info {
-           display: block;
-           margin: 15px 0 0 0;
-           text-decoration: none;
-           font-size: 18px;
-           color: #17744c;
-       }
+      .more_info {
+        display: block;
+        margin: 15px 0 0 0;
+        text-decoration: none;
+        font-size: 18px;
+        color: #17744c;
+      }
 
-       .more_info:hover {
-           text-decoration: underline;
-           color: #30b179;
-       }
+      .more_info:hover {
+        text-decoration: underline;
+        color: #30b179;
+      }
 
-       button {
-           display: block;
-           margin: 40px auto;
-           font-size: 16px;
-           font-weight: bold;
-           background: linear-gradient(#e5f0e6, #8ddfbc);
-           border: 1px solid #137442;
-           border-radius: 15px 40px;
-           transition: all 300ms ease-in-out;
-           color: #17744c;
-           padding: 15px 15px;
-           font-family:fantasy;
-       }
+      button {
+        display: block;
+        margin: 40px auto;
+        font-size: 16px;
+        font-weight: bold;
+        background: linear-gradient(#e5f0e6, #8ddfbc);
+        border: 1px solid #137442;
+        border-radius: 15px 40px;
+        transition: all 300ms ease-in-out;
+        color: #17744c;
+        padding: 15px 15px;
+        font-family: 'Caveat', cursive;
+      }
 
-       button:hover {
-           background-color: #a3f4ee;
-           border: 1px solid #0b1f16;
-           box-shadow: -10px 10px 10px #0d7c25cb;
-           color: #062417;
-           font-weight: bolder;
-           text-decoration: underline;   
-       }
+      button:hover {
+        background-color: #a3f4ee;
+        border: 1px solid #0b1f16;
+        box-shadow: -10px 10px 10px #0d7c25cb;
+        color: #062417;
+        font-weight: bolder;
+        text-decoration: underline;
+      }
 
-       .footer {
-           color: #0d3725;
-           text-align: center;
-           font-size: 14px;
-       }
+      .footer {
+        color: #0d3725;
+        text-align: center;
+        font-size: 14px;
+      }
 
-       .a-footer {
-           color: #5812a9;
-           text-decoration: none;    
-       }
+      .a-footer {
+        color: #5812a9;
+        text-decoration: none;
+      }
 
-       .a-footer:hover {
-           cursor: zoom-in;
-           color: #963dfc;
-           text-decoration: underline;
-       }      
+      .a-footer:hover {
+        cursor: zoom-in;
+        color: #963dfc;
+        text-decoration: underline;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1>
-            My Aloe Vera plants...
-        </h1>
-        <h2>
-            ... and  why <span>you</span> should have an Aloe Vera at your home!
-        </h2>
-        <p>
-            Aloe vera is a medicinal plant that’s been used to treat various health conditions for thousands of years. It’s usually safe to use also vera directly from the plant or you can buy it in gel form.
-        </p>
-        <img class="pictures" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/003/836/original/aloe2.jpg?1607779739" alt="My Aloe Vera">
-        <p>
-            Aloe vera creams, gels, and ointments contain the clear gel found in aloe veraleaves. These products can be applied topically to treat various skin conditions.
-        <br /> 
-        Aloe is sold in capsule or liquid form to take internally to promote health and well-being.
+      <h1>My Aloe Vera plants...</h1>
+      <h2>
+        ... and why <span>you</span> should have an Aloe Vera at your home!
+      </h2>
+      <p>
+        Aloe vera is a medicinal plant that’s been used to treat various health
+        conditions for thousands of years. It’s usually safe to use also vera
+        directly from the plant or you can buy it in gel form.
+      </p>
+      <img
+        class="pictures"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/003/836/original/aloe2.jpg?1607779739"
+        alt="My Aloe Vera"
+      />
+      <p>
+        Aloe vera creams, gels, and ointments contain the clear gel found in
+        aloe veraleaves. These products can be applied topically to treat
+        various skin conditions.
         <br />
-        Read on to learn how to use aloe vera and the potential benefits and risks.
-        </p>
-        <img class="pictures" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/003/837/original/aloe1.jpg?1607779761" alt="My Aloe Vera">
-        <p>
-            It’s relatively simple to harvest an aloe plant for gel and juice. You’ll need a mature plant that’s at least a few years old. This ensures a higher concentration of the active ingredients.
-            <br />
-            You’ll also want to wait a few weeks before cutting leaves from the same plant. You may want to have a few plants on rotation if you plan to harvest aloe often.
-            <br />
-            <br />
-            <strong> To harvest your aloe plant for gel and juice:</strong>
-        </p>
-        <hr />
-        <ol>
-            <li>
-                Remove 3-4 leaves at a time, choosing thick leaves from the outer sections of the plant.
-            </li>
-            <li>
-                Ensure the leaves are healthy and free of any mold or damage.
-            </li>
-            <li>
-                Cut them close to the stem. Most of the beneficial nutrients are found at the base of the leaves.
-            </li>
-            <li>
-                Avoid the roots.
-            </li>
-            <li>
-                Wash and dry the leaves.
-            </li>
-            <li>
-                Trim the prickly edges with a knife.
-            </li>
-            <li>
-                Using a knife or your fingers, separate the interior gel from the outside of the leaf. The interior gel is the part of the aloe that you’ll use.
-            </li>
-            <li>
-                Allow the yellow sap to drain from the leaf. This is the aloe vera latex. If you plan to use the latex, you can catch this in a container. If you’re not planning to use the latex, you can dispose of it.
-            </li>
-            <li>
-                Cut the aloe gel into slices or cubes.
-            </li>
-        </ol>
-        <hr />
-        <p>
-            If you want smooth aloe gel, after separating the aloe from the exterior part of the leaf, you can put the aloe into a blender and then strain the substance to remove the pulp.    
-            <a href="https://www.healthline.com/health/how-to-use-aloe-vera-plant#overview" class="more_info" target="_blank">
-                You can find more about Aloe here ⬅
-            </a>
-        </p>
-        <button type="button" class="go-shop">
-            Visit my Aloe Shop! 🏪
-        </button>
-        <p class="footer">
-            <em> This page was made by 
-                <a href="https://www.linkedin.com/in/joanna-el%C5%BCbieta-t-288561181/" target="_blank" class="a-footer">Joanna Tucka
-                </a> 🌴
-            </em>
-        </p>
+        Aloe is sold in capsule or liquid form to take internally to promote
+        health and well-being.
+        <br />
+        Read on to learn how to use aloe vera and the potential benefits and
+        risks.
+      </p>
+      <img
+        class="pictures"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/003/837/original/aloe1.jpg?1607779761"
+        alt="My Aloe Vera"
+      />
+      <p>
+        It’s relatively simple to harvest an aloe plant for gel and juice.
+        You’ll need a mature plant that’s at least a few years old. This ensures
+        a higher concentration of the active ingredients.
+        <br />
+        You’ll also want to wait a few weeks before cutting leaves from the same
+        plant. You may want to have a few plants on rotation if you plan to
+        harvest aloe often.
+        <br />
+        <br />
+        <strong> To harvest your aloe plant for gel and juice:</strong>
+      </p>
+      <hr />
+      <ol>
+        <li>
+          Remove 3-4 leaves at a time, choosing thick leaves from the outer
+          sections of the plant.
+        </li>
+        <li>Ensure the leaves are healthy and free of any mold or damage.</li>
+        <li>
+          Cut them close to the stem. Most of the beneficial nutrients are found
+          at the base of the leaves.
+        </li>
+        <li>Avoid the roots.</li>
+        <li>Wash and dry the leaves.</li>
+        <li>Trim the prickly edges with a knife.</li>
+        <li>
+          Using a knife or your fingers, separate the interior gel from the
+          outside of the leaf. The interior gel is the part of the aloe that
+          you’ll use.
+        </li>
+        <li>
+          Allow the yellow sap to drain from the leaf. This is the aloe vera
+          latex. If you plan to use the latex, you can catch this in a
+          container. If you’re not planning to use the latex, you can dispose of
+          it.
+        </li>
+        <li>Cut the aloe gel into slices or cubes.</li>
+      </ol>
+      <hr />
+      <p>
+        If you want smooth aloe gel, after separating the aloe from the exterior
+        part of the leaf, you can put the aloe into a blender and then strain
+        the substance to remove the pulp.
+        <a
+          href="https://www.healthline.com/health/how-to-use-aloe-vera-plant#overview"
+          class="more_info"
+          target="_blank"
+        >
+          You can find more about Aloe here ⬅
+        </a>
+      </p>
+      <button type="button" class="go-shop">Visit my Aloe Shop! 🏪</button>
+      <p class="footer">
+        <em>
+          This page was made by
+          <a
+            href="https://www.linkedin.com/in/joanna-el%C5%BCbieta-t-288561181/"
+            target="_blank"
+            class="a-footer"
+            >Joanna Tucka
+          </a>
+          🌴
+        </em>
+      </p>
     </div>
     <script>
-        function shop() {
-            let name = prompt("Firstly, we'd like to send you invitation link. Could you please tell us your name?");
-            let email = prompt(`Great ${name}! And what is your email address?`);
+      function shop() {
+        let name = prompt(
+          "Firstly, we'd like to send you invitation link. Could you please tell us your name?"
+        );
+        let email = prompt(`Great ${name}! And what is your email address?`);
 
-            alert(`Thank you ${name} 💚. We'll contact with you soon. Please check your email address within the next 1 hour. Meanwhile, have a nice day! 🌞`);
-        }
+        alert(
+          `Thank you ${name} 💚. We'll contact with you soon. Please check your email address within the next 1 hour. Meanwhile, have a nice day! 🌞`
+        );
+      }
 
-        let goShop = document.querySelector(".go-shop");
-        goShop.addEventListener("click", shop);
+      let goShop = document.querySelector(".go-shop");
+      goShop.addEventListener("click", shop);
     </script>
-</body>
+  </body>
 </html>
