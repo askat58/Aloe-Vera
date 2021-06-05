@@ -22,7 +22,8 @@
       }
 
       h1 {
-        font-size: 48px;
+        cursor: pointer;
+        font-size: 52px;
         font-family: "Caveat", cursive;
         text-align: center;
       }
@@ -130,7 +131,7 @@
   </head>
   <body>
     <div class="container">
-      <h1>My Aloe Vera plants...</h1>
+      <h1 id="click-me">My Aloe Vera plants...</h1>
       <h2>
         ... and why <span>you</span> should have an Aloe Vera at your home!
       </h2>
@@ -212,7 +213,9 @@
           You can find more about Aloe here ⬅
         </a>
       </p>
-      <button type="button" class="go-shop">Visit my Aloe Shop!</button>
+      <button type="button" class="go-shop" id="click">
+        Visit my Aloe Shop!
+      </button>
       <p class="footer">
         <em>
           This website was made by
@@ -247,6 +250,15 @@
 
       let goShop = document.querySelector(".go-shop");
       goShop.addEventListener("click", shop);
+    </script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("h1").click(function () {
+          $("#click-me").fadeOut().fadeIn();
+          //jQuery("#kliknij").fadeOut().fadeIn();
+        });
+      });
     </script>
   </body>
 </html>
